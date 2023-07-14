@@ -1,0 +1,39 @@
+	<body>
+		<div class="container">
+			<h2>Encerramento de chamado</h2>
+			<p>Prezado(a) ##ticket.authors##,</p>
+			<p>Informamos que o chamado ##ticket.id## foi encerrado com sucesso. Abaixo estão os detalhes do encerramento:</p>
+			<br>
+			<br>
+			<table>
+				<tr>
+					<th>Categoria</th>
+					<td>##IFticket.category## ##ticket.category## ##ENDIFticket.category## ##ELSEticket.category## ##lang.ticket.nocategoryassigned## ##ENDELSEticket.category##</td>
+				</tr>
+				<tr>
+					<th>Resumo</th>
+					<td>##ticket.title##</td>
+				</tr>
+				<tr>
+					<th>Descrição</th>
+					<td>##ticket.content##</td>
+				</tr>
+
+				<tr>
+					<th>Solucionado por</th>
+					<td>##FOREACH LAST 1 timelineitems## ##timelineitems.author## ##ENDFOREACHtimelineitems##</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<div>
+				<h2>Solução</h2>
+				<p>##ticket.solution.description##
+			</div>
+			<br>
+			<br>
+			<a href="##ticket.url##">
+				Clique aqui para visualizar o chamado online
+			</a>
+		</div>
+	</body>

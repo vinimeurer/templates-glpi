@@ -1,0 +1,19 @@
+Acompanhamento do chamado n° ##ticket.id##
+
+ 		Categoria
+		##IFticket.category## ##ticket.category## ##ENDIFticket.category## ##ELSEticket.category## ##lang.ticket.nocategoryassigned## ##ENDELSEticket.category##
+
+ 		Título do Chamado
+ 		##ticket.title##
+
+ 		Descrição
+ 		##ticket.content##
+
+ 		Acompanhado por
+ 		##followup.author##
+
+Resposta
+
+[##followup.date##] - ##followup.description##
+
+ Clique aqui para acompanhar o chamado online 

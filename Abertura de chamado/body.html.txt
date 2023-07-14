@@ -1,0 +1,57 @@
+<body>
+		<div class="container">
+			<h2>Abertura de Chamado</h2>
+			<table>
+				<tr>
+					<th>N° do chamado</th>
+					<td>##ticket.id##</td>
+				</tr>
+				<tr>
+					<th>Status</th>
+					<td>##ticket.status##</td>
+				</tr>
+				<tr>
+					<th>Solicitação</th>
+					<td>##ticket.title## <br> ##ticket.content## </td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<h2>Dados do Chamado</h2>
+			<table>
+				<tr>
+					<th>Solicitado por</th>
+					<td>##ticket.authors##</td>
+				</tr>
+				<tr>
+					<th>Data de abertura</th>
+					<td>##ticket.creationdate##</td>
+				</tr>
+				<tr>
+					<th>Origem</th>
+					<td>##ticket.requesttype##</td>
+				</tr>
+				<tr>
+					<th>Categoria</th>
+					<td>##IFticket.category## ##ticket.category## ##ENDIFticket.category## ##ELSEticket.category## ##lang.ticket.nocategoryassigned## ##ENDELSEticket.category##</td>
+				</tr>
+				<tr>
+					<th>Urgência</th>
+					<td>##ticket.urgency##</td>
+				</tr>
+				<tr>
+					<th>Impacto</th>
+					<td>##ticket.impact##</td>
+				</tr>
+				<tr>
+					<th>Prioridade</th>
+					<td>##ticket.priority##</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<a href="##ticket.url##">
+				<button>Clique aqui para acompanhar o chamado online</button>
+			</a>
+</div>
+</body>

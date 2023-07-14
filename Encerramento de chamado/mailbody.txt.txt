@@ -1,0 +1,27 @@
+
+Encerramento de chamado
+
+Prezado(a) ##ticket.authors##,
+
+Informamos que o chamado ##ticket.id## foi encerrado com sucesso. Abaixo estão os detalhes do encerramento:
+
+
+		Categoria 
+		##IFticket.category## ##ticket.category## ##ENDIFticket.category## ##ELSEticket.category## ##lang.ticket.nocategoryassigned## ##ENDELSEticket.category##
+
+		Resumo 
+		##ticket.title##
+
+		Descrição 
+		##ticket.content##
+
+		Solucionado por 
+		##FOREACH LAST 1 timelineitems## ##timelineitems.author## ##ENDFOREACHtimelineitems##
+
+
+Solução
+
+##ticket.solution.description##
+
+
+Clique aqui para acompanhar o chamado online 

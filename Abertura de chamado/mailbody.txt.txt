@@ -1,0 +1,39 @@
+Abertura de Chamado
+
+ 		N° do chamado
+ 		##ticket.id##
+
+ 		Status
+ 		##ticket.status##
+
+ 		Solicitação
+ 		##ticket.title## 
+##ticket.content##
+
+Dados do Chamado
+
+ 		Solicitado por
+ 		##ticket.authors##
+
+ 		Data de abertura
+ 		##ticket.creationdate##
+
+ 		Data de fechamento
+ 		##IFticket.closedate## ##ticket.closedate## ##ENDIFticket.closedate## ##ELSEticket.closedate## ------ ##ENDELSEticket.closedate## ##IFticket.numberoffollowups##
+
+ 		Origem
+ 		##ticket.requesttype##
+
+ 		Categoria
+ 		##IFticket.category## ##ticket.category## ##ENDIFticket.category## ##ELSEticket.category## ##lang.ticket.nocategoryassigned## ##ENDELSEticket.category##
+
+ 		Urgência
+ 		##ticket.urgency##
+
+ 		Impacto
+ 		##ticket.impact##
+
+ 		Prioridade
+ 		##ticket.priority##
+
+ Clique aqui para visualizar o chamado online 

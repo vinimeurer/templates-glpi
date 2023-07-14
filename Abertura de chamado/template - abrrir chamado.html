@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Abertura de Chamado</title>
+		<style>
+			/* Estilos gerais */
+			body {
+				font-family: Arial, sans-serif;
+			}
+
+			.container {
+				max-width: 600px;
+				margin: 0 auto;
+				padding: 20px;
+			}
+
+			h2 {
+				color: #4f6e29;
+			}
+
+			p {
+				margin-bottom: 10px;
+			}
+
+			table {
+				width: 100%;
+				border-collapse: collapse;
+			}
+
+			th,
+			td {
+				padding: 8px;
+				text-align: left;
+				border-bottom: 1px solid #ddd;
+			}
+
+			th {
+				background-color: #f2f2f2;
+			}
+
+			a {
+				background-color: #4f6e29;
+				border-radius: 6px;
+				display: inline-block;
+				cursor: pointer;
+				color: #ffffff;
+				font-family: Arial;
+				font-size: 15px;
+				font-weight: bold;
+				padding: 15px 74px;
+				text-decoration: none;
+				border: none;
+			}
+
+			/* Estilos para tornar o e-mail responsivo */
+			@media screen and (max-width: 600px) {
+				table {
+					font-size: 12px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Abertura de Chamado</h2>
+			<table>
+				<tr>
+					<th>N° do chamado</th>
+					<td>##ticket.id##</td>
+				</tr>
+				<tr>
+					<th>Status</th>
+					<td>##ticket.status##</td>
+				</tr>
+				<tr>
+					<th>Solicitação</th>
+					<td>##ticket.title## <br> ##ticket.content## </td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<h2>Dados do Chamado</h2>
+			<table>
+				<tr>
+					<th>Solicitado por</th>
+					<td>##ticket.authors##</td>
+				</tr>
+				<tr>
+					<th>Data de abertura</th>
+					<td>##ticket.creationdate##</td>
+				</tr>
+				<tr>
+					<th>Origem</th>
+					<td>##ticket.requesttype##</td>
+				</tr>
+				<tr>
+					<th>Categoria</th>
+					<td>##IFticket.category## ##ticket.category## ##ENDIFticket.category## ##ELSEticket.category## ##lang.ticket.nocategoryassigned## ##ENDELSEticket.category##</td>
+				</tr>
+				<tr>
+					<th>Urgência</th>
+					<td>##ticket.urgency##</td>
+				</tr>
+				<tr>
+					<th>Impacto</th>
+					<td>##ticket.impact##</td>
+				</tr>
+				<tr>
+					<th>Prioridade</th>
+					<td>##ticket.priority##</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<a href="##ticket.url##">
+				Clique aqui para acompanhar o chamado online
+			</a>
+</div>
+</body>
+</html>
